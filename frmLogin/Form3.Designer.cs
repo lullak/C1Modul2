@@ -39,8 +39,6 @@
             label1.Size = new Size(91, 20);
             label1.TabIndex = 0;
             label1.Text = "Välkommen ";
-            label1.TextChanged += label1_TextChanged;
-            label1.Click += label1_Click;
             // 
             // Form3
             // 

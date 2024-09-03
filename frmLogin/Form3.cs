@@ -17,19 +17,9 @@ namespace frmLogin
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         public void UpdateLabelText(string text)
         {
-            label1.Text = text;  
+            label1.Text = text;
         }
     }
 }
