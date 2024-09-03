@@ -25,9 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metoder8", "Metoder8\Metode
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metoder9", "Metoder9\Metoder9.csproj", "{6AEB1FDA-15A4-40F4-B005-2EFEB884B485}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metoder10", "Metoder10\Metoder10.csproj", "{63EDE844-9E3C-4986-B555-BD4349C65705}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metoder10", "Metoder10\Metoder10.csproj", "{63EDE844-9E3C-4986-B555-BD4349C65705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metoder11", "Metoder11\Metoder11.csproj", "{D7200CC6-78F0-4B5E-AFB4-60E26A5E0C6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metoder11", "Metoder11\Metoder11.csproj", "{D7200CC6-78F0-4B5E-AFB4-60E26A5E0C6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetoderLektion", "MetoderLektion\MetoderLektion.csproj", "{0CC57B02-67BA-4532-9CC3-D2EC39888777}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{D7200CC6-78F0-4B5E-AFB4-60E26A5E0C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7200CC6-78F0-4B5E-AFB4-60E26A5E0C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7200CC6-78F0-4B5E-AFB4-60E26A5E0C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CC57B02-67BA-4532-9CC3-D2EC39888777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CC57B02-67BA-4532-9CC3-D2EC39888777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CC57B02-67BA-4532-9CC3-D2EC39888777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CC57B02-67BA-4532-9CC3-D2EC39888777}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
