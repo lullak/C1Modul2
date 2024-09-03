@@ -1,14 +1,42 @@
-﻿//DateTime TimeSpan
+﻿//list
 
-DateTime date1 = DateTime.Now;
-DateTime date2 = date1.AddDays(1);
+//Nackdelen men en array är när man vill öka antalet positioner.
+int[] numberArray = new int[] {1,2,3,4};
 
-Console.WriteLine(date1 + " " + date2);
+List<int> numberList = new List<int>() {1,2,3,4};
+//I en lista kan man öka anatalet positioner och minska.
+numberList.Add(1);
+numberList.RemoveAt(1);
 
+// En list mycket mer flexibel och mycket mer funktionalltet än en array.
+Console.WriteLine($"Detta är några värden från listan. Medelvärde av alla tal: {numberList.Average()}. Och Summan; {numberList.Sum()}" +
+    $" och antalet tal: {numberList.Count()} " );
 
+foreach (var number in numberList)
+{
+    Console.WriteLine(number);
+}
 
+List<int> result = GetNumbers();
+
+// Mycket vanligt att en metod retunern en lista med värden
+List<int> GetNumbers()
+{
+    return new List<int>() {1,2,3,4,5,6,7,8,9};
+}
 
 Console.ReadLine();
+
+//DateTime TimeSpan
+
+//DateTime date1 = DateTime.Now;
+//DateTime date2 = date1.AddDays(1);
+
+//Console.WriteLine(date1 + " " + date2);
+
+
+
+
 //strängar
 //string emailAddress = "Lisa.Lind@nackademin.se";
 //int seperator = emailAddress.IndexOf("@");
