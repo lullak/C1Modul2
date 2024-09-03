@@ -2,8 +2,6 @@ namespace frmLogin
 {
     public partial class Form1 : Form
     {
-        public string username = "Dennis";
-        public string password = "password";
      
         public Form1()
         {
@@ -13,8 +11,11 @@ namespace frmLogin
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Credentials credentials = new Credentials();
+            
+
            
-            if (textBoxEmail.Text != "" && username == "Dennis")
+            if (textBoxEmail.Text != "" &&  credentials.Username == "user")
             {
                 Form2 form2 = new Form2();
                 this.Hide();
