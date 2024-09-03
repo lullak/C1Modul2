@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metoder11", "Metoder11\Meto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetoderLektion", "MetoderLektion\MetoderLektion.csproj", "{0CC57B02-67BA-4532-9CC3-D2EC39888777}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "frmVisaTextMeddelande", "frmVisaTextMeddelande\frmVisaTextMeddelande.csproj", "{4AFC6EAA-FA07-4622-A23C-75210183713F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{0CC57B02-67BA-4532-9CC3-D2EC39888777}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CC57B02-67BA-4532-9CC3-D2EC39888777}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CC57B02-67BA-4532-9CC3-D2EC39888777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AFC6EAA-FA07-4622-A23C-75210183713F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AFC6EAA-FA07-4622-A23C-75210183713F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AFC6EAA-FA07-4622-A23C-75210183713F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AFC6EAA-FA07-4622-A23C-75210183713F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
