@@ -1,24 +1,31 @@
-﻿// Demo Filhantering
+﻿
 
-string file = @"C:\Users\Birca\Desktop\Namnlista.txt";
-
-using (StreamWriter sw = new StreamWriter(file, true))
-{
-    sw.WriteLine("Olle,olle@gmail.com,070-12345");
-    sw.WriteLine("Simon,simon@gmail.com,070-12345");
-    sw.WriteLine("Kent");
-    sw.WriteLine("Kalle");
-}
-using (StreamReader sr = new StreamReader(file)) 
-{
-    string row;
-    while((row = sr.ReadLine()) != null)
-    {
-        Console.WriteLine(row);
-    }
-}
 
 Console.ReadLine();
+
+
+
+// Demo Filhantering
+
+//string file = @"C:\Users\Birca\Desktop\Namnlista.txt";
+
+//using (StreamWriter sw = new StreamWriter(file, true))
+//{
+//    sw.WriteLine("Olle,olle@gmail.com,070-12345");
+//    sw.WriteLine("Simon,simon@gmail.com,070-12345");
+//    sw.WriteLine("Kent");
+//    sw.WriteLine("Kalle");
+//}
+//using (StreamReader sr = new StreamReader(file))
+//{
+//    string row;
+//    while ((row = sr.ReadLine()) != null)
+//    {
+//        Console.WriteLine(row);
+//    }
+//}
+
+//Console.ReadLine();
 ////list
 
 ////Nackdelen men en array är när man vill öka antalet positioner.

@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            int maxValue = KontrolleraMaxVarde(123, 234, 0);
+            int maxValue = KontrolleraMaxVarde(-123, -243, 0);
             Console.WriteLine(maxValue);
             Console.ReadLine();
         }
