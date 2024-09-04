@@ -33,20 +33,21 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(199, 114);
+            textBox1.Location = new Point(12, 12);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 34);
+            textBox1.Size = new Size(769, 422);
             textBox1.TabIndex = 0;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(793, 446);
             Controls.Add(textBox1);
             Name = "Form1";
             Text = "Form1";
+            Resize += Form1_Resize;
             ResumeLayout(false);
             PerformLayout();
         }
