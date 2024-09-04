@@ -15,7 +15,7 @@ namespace frmLogin
             
 
            
-            if (textBoxEmail.Text != "" &&  credentials.Username == "user")
+            if (textBoxEmail.Text != "" && textBoxEmail.Text == credentials.Username)
             {
                 Form2 form2 = new Form2();
                 this.Hide();

@@ -21,8 +21,9 @@ namespace frmLogin
         private void loginButton_Click(object sender, EventArgs e)
         {
             Credentials credentials = new Credentials();
+            
 
-            if (textBoxPassword.Text != "" && credentials.Password == "password")
+            if (textBoxPassword.Text != "" && textBoxPassword.Text == credentials.Password)
             {
                 Form3 form3 = new Form3();
                 this.Hide();
