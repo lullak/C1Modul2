@@ -57,14 +57,14 @@
             lstFiles.FormattingEnabled = true;
             lstFiles.Location = new Point(123, 130);
             lstFiles.Name = "lstFiles";
-            lstFiles.Size = new Size(343, 204);
+            lstFiles.Size = new Size(583, 204);
             lstFiles.TabIndex = 2;
             // 
             // cmdVisaFiler
             // 
-            cmdVisaFiler.Location = new Point(121, 343);
+            cmdVisaFiler.Location = new Point(121, 352);
             cmdVisaFiler.Name = "cmdVisaFiler";
-            cmdVisaFiler.Size = new Size(94, 29);
+            cmdVisaFiler.Size = new Size(129, 51);
             cmdVisaFiler.TabIndex = 3;
             cmdVisaFiler.Text = "Visa filer";
             cmdVisaFiler.UseVisualStyleBackColor = true;

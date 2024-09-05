@@ -25,9 +25,10 @@ namespace FormsFile2
 
             foreach (string file in files)
             {
-                int position = file.IndexOf(@"\");
-                file.Substring(position, + 1);
-                lstFiles.Items.Add(file);
+                int position = file.LastIndexOf(@"\") +1;
+                int positionDot = file.LastIndexOf(".");
+                string fileName = file.Substring(position, positionDot - position);
+                lstFiles.Items.Add(fileName);
             }
 
         }
