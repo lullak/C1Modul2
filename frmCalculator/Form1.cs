@@ -9,6 +9,17 @@ namespace frmCalculator
             InitializeComponent();
         }
 
+        public string ButtonToText(string text)
+        {
+            if (textBox1.Text == "0" && textBox1.Text != null)
+            {
+                return textBox1.Text = text;
+            }
+            else
+            {
+                return textBox1.Text = textBox1.Text + text;
+            }
+        }
 
         private void btnZero_Click(object sender, EventArgs e)
         {
@@ -17,122 +28,52 @@ namespace frmCalculator
 
         private void btnOne_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
-            {
-                textBox1.Text = "1";
-            }
-            else
-            {
-                textBox1.Text = textBox1.Text + "1";
-            }
+            ButtonToText("1");
         }
 
         private void btnTwo_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
-            {
-                textBox1.Text = "2";
-            }
-            else
-            {
-                textBox1.Text = textBox1.Text + "2";
-            }
+            ButtonToText("2");
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
-            {
-                textBox1.Text = "3";
-            }
-            else
-            {
-                textBox1.Text = textBox1.Text + "3";
-            }
+            ButtonToText("3");
         }
 
         private void btnFour_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
-            {
-                textBox1.Text = "4";
-            }
-            else
-            {
-                textBox1.Text = textBox1.Text + "4";
-            }
+            ButtonToText("4");
         }
 
         private void btnFive_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
-            {
-                textBox1.Text = "5";
-            }
-            else
-            {
-                textBox1.Text = textBox1.Text + "5";
-            }
+            ButtonToText("5");
         }
 
         private void btnSix_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
-            {
-                textBox1.Text = "6";
-            }
-            else
-            {
-                textBox1.Text = textBox1.Text + "6";
-            }
+            ButtonToText("6");
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
-            {
-                textBox1.Text = "7";
-            }
-            else
-            {
-                textBox1.Text = textBox1.Text + "7";
-            }
+            ButtonToText("7");
         }
 
         private void btnEight_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
-            {
-                textBox1.Text = "8";
-            }
-            else
-            {
-                textBox1.Text = textBox1.Text + "8";
-            }
+            ButtonToText("8");
         }
 
         private void btnNine_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
-            {
-                textBox1.Text = "9";
-            }
-            else
-            {
-                textBox1.Text = textBox1.Text + "9";
-            }
+            ButtonToText("9");
         }
 
         private void btnComma_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
-            {
-                textBox1.Text = ",";
-            }
-            else
-            {
-                textBox1.Text = textBox1.Text + ",";
-            }
+            ButtonToText(",");
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
