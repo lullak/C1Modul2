@@ -32,6 +32,9 @@
             textBox1 = new TextBox();
             lstFiles = new ListBox();
             cmdVisaFiler = new Button();
+            buttonOpen = new Button();
+            buttonSave = new Button();
+            textBox2 = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -42,22 +45,20 @@
             label1.Size = new Size(74, 20);
             label1.TabIndex = 0;
             label1.Text = "Filkatalog";
-            label1.Click += label1_Click;
             // 
             // textBox1
             // 
             textBox1.Location = new Point(121, 70);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(345, 27);
+            textBox1.Size = new Size(257, 27);
             textBox1.TabIndex = 1;
-            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // lstFiles
             // 
             lstFiles.FormattingEnabled = true;
             lstFiles.Location = new Point(123, 130);
             lstFiles.Name = "lstFiles";
-            lstFiles.Size = new Size(583, 204);
+            lstFiles.Size = new Size(255, 204);
             lstFiles.TabIndex = 2;
             // 
             // cmdVisaFiler
@@ -70,11 +71,42 @@
             cmdVisaFiler.UseVisualStyleBackColor = true;
             cmdVisaFiler.Click += cmdVisaFiler_Click;
             // 
+            // buttonOpen
+            // 
+            buttonOpen.Location = new Point(525, 352);
+            buttonOpen.Name = "buttonOpen";
+            buttonOpen.Size = new Size(94, 29);
+            buttonOpen.TabIndex = 4;
+            buttonOpen.Text = "Öppna";
+            buttonOpen.UseVisualStyleBackColor = true;
+            buttonOpen.Click += buttonOpen_Click;
+            // 
+            // buttonSave
+            // 
+            buttonSave.Location = new Point(625, 352);
+            buttonSave.Name = "buttonSave";
+            buttonSave.Size = new Size(94, 29);
+            buttonSave.TabIndex = 5;
+            buttonSave.Text = "Spara";
+            buttonSave.UseVisualStyleBackColor = true;
+            buttonSave.Click += buttonSave_Click;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(480, 133);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(239, 201);
+            textBox2.TabIndex = 6;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox2);
+            Controls.Add(buttonSave);
+            Controls.Add(buttonOpen);
             Controls.Add(cmdVisaFiler);
             Controls.Add(lstFiles);
             Controls.Add(textBox1);
@@ -91,5 +123,8 @@
         private TextBox textBox1;
         private ListBox lstFiles;
         private Button cmdVisaFiler;
+        private Button buttonOpen;
+        private Button buttonSave;
+        private TextBox textBox2;
     }
 }
