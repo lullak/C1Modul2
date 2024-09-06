@@ -339,6 +339,7 @@
             btnChangePlusMinus.TabIndex = 21;
             btnChangePlusMinus.Text = "+/-";
             btnChangePlusMinus.UseVisualStyleBackColor = false;
+            btnChangePlusMinus.Click += btnChangePlusMinus_Click;
             // 
             // btnZero
             // 

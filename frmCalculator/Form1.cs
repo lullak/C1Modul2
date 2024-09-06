@@ -2,13 +2,70 @@ namespace frmCalculator
 {
     public partial class Form1 : Form
     {
-        string operation;
-        double firstNumber;
+        private string operation;
+        private double result = 0;
+        private bool isOperationPending = false;
         public Form1()
         {
             InitializeComponent();
         }
 
+        private void AppendNumber(string number)
+        {
+            if (textBox1.Text == "0")
+                textBox1.Text = number;
+            else
+                textBox1.Text += number;
+        }
+
+        private void SetOperation(string op)
+        {
+            if (isOperationPending)
+            {
+                PerformCalculation();
+                operation = op;
+            }
+            else
+            {
+                result = Convert.ToDouble(textBox1.Text);
+                operation = op;
+                isOperationPending = true;
+                
+            }
+            operation = op;
+            textBox1.Text = "0";
+        }
+
+        private void PerformCalculation()
+        {
+            double number = Convert.ToDouble(textBox1.Text);
+
+            switch (operation)
+            {
+                case "+":
+                    result += number;
+                    break;
+                case "-":
+                    result -= number;
+                    break;
+                case "*":
+                    result *= number;
+                    break;
+                case "+-":
+                    result = -number;
+                    break;
+                case "/":
+                    if (number != 0)
+                        result /= number;
+                    else
+                        MessageBox.Show("Cannot divide by zero.");
+                    break;
+                default:
+                    break;
+            }
+
+            textBox1.Text = $"{result}";
+        }
 
         private void btnZero_Click(object sender, EventArgs e)
         {
@@ -137,30 +194,22 @@ namespace frmCalculator
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            firstNumber = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = "0";
-            operation = "+";
+            SetOperation("+");
         }
 
         private void btnSubtract_Click(object sender, EventArgs e)
         {
-            firstNumber = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = "0";
-            operation = "-";
+            SetOperation("-");
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
         {
-            firstNumber = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = "0";
-            operation = "*";
+            SetOperation("*");
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
-            firstNumber = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = "0";
-            operation = "/";
+            SetOperation("/");
         }
 
         private void btnSquareRoot_Click(object sender, EventArgs e)
@@ -226,33 +275,27 @@ namespace frmCalculator
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            double sum;
-            if (operation == "+")
+            if (isOperationPending)
             {
-                sum = firstNumber + Convert.ToDouble(textBox1.Text);
-                textBox1.Text = $"{sum}";
-            }
-            if (operation == "-")
-            {
-                sum = firstNumber - Convert.ToDouble(textBox1.Text);
-                textBox1.Text = $"{sum}";
-            }
-            if (operation == "/")
-            {
-                sum = firstNumber / Convert.ToDouble(textBox1.Text);
-                textBox1.Text = $"{sum}";
-            }
-            if (operation == "*")
-            {
-                sum = firstNumber * Convert.ToDouble(textBox1.Text);
-                textBox1.Text = $"{sum}";
+                PerformCalculation();
+                operation = "=";
+                isOperationPending = false;
             }
 
+
         }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnChangePlusMinus_Click(object sender, EventArgs e)
+        {
+            {
+                SetOperation("+-");
+            }
         }
     }
 }
