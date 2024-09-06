@@ -352,7 +352,7 @@
             btnZero.TabIndex = 22;
             btnZero.Text = "0";
             btnZero.UseVisualStyleBackColor = false;
-            btnZero.Click += btnZero_Click;
+            
             // 
             // btnComma
             // 
